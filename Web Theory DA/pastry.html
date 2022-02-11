@@ -1,0 +1,55 @@
+<html>
+<head>
+<style>
+.pastry{
+background-image:url('pastry.jpg');
+height:110%;
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+font-size:25px;
+font-weight:bold;
+}</style>
+<script>
+function myFunction(){
+var count=0;
+var bak=document.getElementsByName("a");
+for(var i=0;i<bak.length;i++)
+{
+if (bak[i].checked){
+   alert ("Thank you for selecting the Items");
+count=count+1;
+  }
+}if(count==0)
+   alert ("Please select an item");
+}
+</script>
+</head>
+<body>
+<div class=pastry>
+<form name="Bakery">
+<input type="checkbox" id="a" name="a">
+<label for="a">Chocolate Pastry</label><br><br>
+<input type="checkbox" id="b" name="a">
+<label for="b">Vanilla Pastry</label><br><br>
+<input type="checkbox" id="c" name="a">
+<label for="c">Fruit Pastry</label><br><br>
+<input type="checkbox" id="d" name="a">
+<label for="d">Strawberry Pastry</label><br><br>
+<input type="checkbox" id="e" name="a">
+<label for="e">Blackforest Pastry</label><br><br>
+<input type="checkbox" id="f" name="a">
+<label for="f">Pineapple Pastry</label><br><br>
+<input type="checkbox" id="g" name="a">
+<label for="g">Butterscotch Pastry</label><br><br>
+<input type="checkbox" id="h" name="a">
+<label for="h">Mango Pastry</label><br><br>
+<input type="checkbox" id="i" name="a">
+<label for="i">Plum Pastry</label><br><br>
+<input type="checkbox" id="j" name="a">
+<label for="j">Fruit Tarts</label><br><br>
+<input type="submit" value="Add to Cart" onclick="myFunction()">
+</form>
+</body>
+
+</html>

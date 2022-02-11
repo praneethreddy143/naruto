@@ -1,0 +1,55 @@
+<html>
+<head>
+<style>
+.muffins{
+background-image:url('muffin.jpg');
+height:110%;
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+font-size:25px;
+font-weight:bold;
+}</style>
+<script>
+function myFunction(){
+var count=0;
+var bak=document.getElementsByName("a");
+for(var i=0;i<bak.length;i++)
+{
+if (bak[i].checked){
+   alert ("Thank you for selecting the Items");
+count=count+1;
+  }
+}if(count==0)
+   alert ("Please select an Item");
+}
+</script>
+</head>
+<body>
+<div class=muffins>
+<form name="Bakery">
+<input type="checkbox" id="a" name="a">
+<label for="a">Cupcakes</label><br><br>
+<input type="checkbox" id="b" name="a">
+<label for="b">Muffins</label><br><br>
+<input type="checkbox" id="c" name="a">
+<label for="c">Chocolate Cupcake</label><br><br>
+<input type="checkbox" id="d" name="a">
+<label for="d">Strawberry Cupcake</label><br><br>
+<input type="checkbox" id="e" name="a">
+<label for="e">Blueberry Cupcake</label><br><br>
+<input type="checkbox" id="f" name="a">
+<label for="f">Pineapple Cupcake</label><br><br>
+<input type="checkbox" id="g" name="a">
+<label for="g">Butterscotch Cupcake</label><br><br>
+<input type="checkbox" id="h" name="a">
+<label for="h">Mango Muffin</label><br><br>
+<input type="checkbox" id="i" name="a">
+<label for="i">Banana Muffin</label><br><br>
+<input type="checkbox" id="j" name="a">
+<label for="j">Vanilla Cupcake</label><br><br>
+<input type="submit" value="Add to Cart" onclick="myFunction()">
+</form>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<html> 
+<head>
+<style>
+#register{
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+
+}
+</style>
+<script>
+function fun1(){
+var x= document.forms["myform"]["password"].value;
+var y= document.forms["myform"]["pssd1"].value;
+
+if(x != y )
+{
+alert(" password  does not  match");
+}
+}
+</script>
+</head>
+<body>
+<div>
+<fieldset>
+<legend> Registration form</legend>
+<table align="center"> 
+<form action="registerdb.php" method="post">
+<tr> 
+		<td> First Name:</td>
+		<td><input type="text" id="fname" name="fname" required  ></td>
+</tr>
+<tr> 	<td> Middle Name </td>
+		<td> <input type="text" id="mname" name="mname"  required></td>
+</tr>
+<tr> 	<td> Last Name </td>
+		<td> <input type="text" id="lname" name="lname" required ></td>
+</tr>
+<tr> 	<td> Gender </td>
+		<td> <input type="radio" id="gender" name="gender" > Male
+		<input type="radio" id="gender" name="gender" > Female
+		<input type="radio" id="gender" name="gender" > others</td>
+</tr>
+<tr> 	<td> Email   </td>
+		<td> <input type="email" id="email" name="email" required ></td>
+</tr>
+<tr> 	<td> City </td>
+		<td> <input type="text" id="city" name="city" required ></td>
+</tr>
+<tr> 	<td> Address </td>
+		<td> <textarea rows="5" cols="25">  </textarea></td>
+</tr>
+
+<tr> 	<td> Username</td>
+		<td> <input type="text" id="user" name="user" required ></td>
+</tr>
+<tr> 	<td> Password</td>
+		<td> <input type="password" id="password" name="password" required ></td>
+</tr>
+
+<tr> 	<td> Mobile number</td>
+		<td> <input type="text" id="phone" name="phone" required ></td>
+</tr>
+
+
+<tr >
+		<td colspan="2" >
+<button id="register" name="register" > Register </button>
+</td>
+</tr>
+<tr>
+   <td> </td>
+   <td> <a href="login.php" >Back to login page</a>
+   </tr> 
+  </table>   
+</fieldset>
+</body>
+</html>

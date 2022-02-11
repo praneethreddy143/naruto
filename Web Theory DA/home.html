@@ -1,0 +1,22 @@
+<?php
+session_start();
+
+
+
+
+?>
+<html>
+<head>
+<style>
+a{
+	color:orange;
+}
+</style></head>
+<body bgcolor="white"><h3 align="center" style="color:orange"><i><q>Welcome to the Online bakery  <?php  echo  $_SESSION['name']; ?></q></i></h3><span style="float:right; text-color:yellow;"><a href="logout.php"  >Logout</a></span>
+<table cellspacing="10">
+<tr>
+<td><a href="Cakes.html" target="right"> Cakes </a>
+</td><td><a href="pastry.html" target="right">Pastry</a></td><td><a href="Candy.html" target="right">Candy and Jelly</a></td><td><a href="Muffins.html" target="right">Muffins and Cup Cakes</a></td></tr></table><iframe name="right" height="100%" width="110%" >
+</iframe>
+ </body> 
+</html>
