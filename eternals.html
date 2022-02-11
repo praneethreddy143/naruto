@@ -1,0 +1,85 @@
+
+<html>
+<head>
+<style>
+
+
+#submit{
+display: block;
+width: 97%;
+border: none;
+background-color: #4CAF50;
+color: white;
+padding: 14px 28px;
+font-size: 16px;
+cursor: pointer;
+text-align: center;
+
+}
+#submit:hover{
+background-color: rgb(57, 55, 223);
+color: rgb(252, 253, 250);
+}
+.img {
+background-image:url("eternals.jpeg");
+height:110%;
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+
+
+</style>
+</head>
+<body >
+    <h2>information about the movie</h3> 
+    <div style="border: 1px solid; border-radius: 5px;z-index: 1; box-shadow: 10px 10px 5px black;width: 650px;
+    padding-bottom: 10px;margin-bottom: 10px;">
+The Eternals, a race of immortal beings with superhuman powers who have secretly lived on Earth for thousands of years, reunite to battle the evil Deviants.
+Release date: 5 November 2021 (USA)
+Director: Chloé Zhao
+Budget: 20 crores USD
+Music director: Ramin Djawadi
+Production company: Marvel Studios
+Story by: Jack Kirby, Kaz Firpo
+        
+    </div>    
+<div class="img">
+<div  style=" height:70px">
+</div>
+<form name="myform" action="collection2.php" method="post" >
+<table>
+<tr>
+<td> <lable style="font-size:26"> Give your review :</lable> </td>
+<td> </td>
+<td><textarea name="review" rows="10" cols="40" placeholder="Please give your review"></textarea></td>
+<!-- <td><input  type="text" id="review" name="review" placeholder="enter the review"required></td> -->
+</tr>
+<!-- <tr>
+<td><lable style="font-size:26">Password :</lable></td>
+<td><input  type="password" id="password" name="password" placeholder="password " required></td>
+</tr> -->
+<tr><td>
+<tr ><td> </td><td colspan="2" >
+<button id="submit" name="submit" > submit </button>
+</td>
+<td> <button id="view" name="view " onclick="myfunction()">VIEW PREDICTION VALUE</button></td>
+</tr>
+<!-- <tr>		<td></td>
+<td> <a href="register_page.html" >Register</a></td>
+</tr> -->
+</table>
+</div>
+</form>
+<script>
+    function myfunction(){
+        var a=document.getElementById("view");
+    if (a){
+        alert("The Movie is Hit");
+    }
+    }
+    
+</script>
+</body>
+</html>

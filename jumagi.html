@@ -1,0 +1,88 @@
+<html>
+<head>
+<style>
+
+
+#submit{
+display: block;
+width: 97%;
+border: none;
+background-color: #4CAF50;
+color: white;
+padding: 14px 28px;
+font-size: 16px;
+cursor: pointer;
+text-align: center;
+
+}
+#submit:hover{
+background-color: rgb(57, 55, 223);
+color: rgb(252, 253, 250);
+}
+.img {
+background-image:url("6.jpg");
+height:110%;
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+
+
+</style>
+</head>
+<body >
+    <h2>information about the movie</h2> 
+    <div style="border: 1px solid; border-radius: 5px;z-index: 1; box-shadow: 10px 10px 5px black;width: 650px;
+    padding-bottom: 10px;margin-bottom: 10px;">
+four students play with a magical video game, they are drawn to the jungle world of Jumanji,
+where they are trapped as their avatars. To return to the real world, they must finish the game.
+Release date: 20 December 2017 (USA)
+Show: Cinema Judge
+Director: Jake Kasdan
+ Starring: Dwayne Johnson; Jack Black; Kevin Hart; Karen Gillan; Nick Jonas; Bobby Cannavale
+ Adapted from: Jumanji
+ Box office: $800.1 million   
+    <!-- </div>  -->
+    </div>   
+    <div style="border: 1px solid; border-radius: 5px;z-index: 1; box-shadow: 10px 10px 5px black;
+    padding-bottom: 10px;margin: 10px;" >
+<div class="img">
+<div  style=" height:70px">
+</div>
+<form name="myform" action="collection4.php" method="post" >
+<table>
+<tr>
+<td> <lable style="font-size:26"> Give your review :</lable> </td>
+<td> </td>
+<td><textarea name="review" rows="10" cols="40" placeholder="Please give your review"></textarea></td>
+<!-- <td><input  type="text" id="review" name="review" placeholder="enter the review"required></td> -->
+</tr>
+<!-- <tr>
+<td><lable style="font-size:26">Password :</lable></td>
+<td><input  type="password" id="password" name="password" placeholder="password " required></td>
+</tr> -->
+<tr><td>
+<tr ><td> </td><td colspan="2" >
+<button id="submit" name="submit" > submit </button>
+</td>
+<td> <button id="view" name="view " onclick="myfunction()">VIEW PREDICTION VALUE</button></td>
+</tr>
+<!-- <tr>		<td></td>
+<td> <a href="register_page.html" >Register</a></td>
+</tr> -->
+</table>
+</form>
+</div>
+</div>
+<script>
+    function myfunction(){
+        var a=document.getElementById("view");
+    if (a){
+        alert("The Movie is Hit");
+    }
+    }
+    
+</script>
+</body>
+</html>
